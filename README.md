@@ -1,23 +1,45 @@
-# 🏡 Villa Agency - DevOps Project
+# 🏡 Villa Agency
 
-This project is a static real-estate website template (HTML, CSS, JS) that I **containerized and deployed** using a complete DevOps pipeline.
+[![GitHub issues](https://img.shields.io/github/issues/GMPWijegunawardana/villa-agency)](https://github.com/GMPWijegunawardana/villa-agency/issues)
+[![GitHub forks](https://img.shields.io/github/forks/GMPWijegunawardana/villa-agency)](https://github.com/GMPWijegunawardana/villa-agency/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/GMPWijegunawardana/villa-agency)](https://github.com/GMPWijegunawardana/villa-agency/stargazers)
+[![GitHub license](https://img.shields.io/github/license/GMPWijegunawardana/villa-agency)](./LICENSE)
 
-## 🔹 Tech Stack
-- HTML, CSS, JS (TemplateMo Villa Agency)
-- Docker & DockerHub
-- Jenkins (CI/CD)
-- Ansible (Configuration Management & Deployment)
-- Terraform (AWS Infrastructure as Code)
-- AWS EC2
+Villa Agency is a **responsive real estate template** for showcasing villas, apartments, and other properties.  
+It is built using **HTML, CSS, Bootstrap 5, and JavaScript** and can be easily **containerized using Docker**.
 
-## 🔹 CI/CD Pipeline Flow
-1. Developer pushes code to GitHub
-2. Jenkins pulls the code
-3. Jenkins builds a Docker image
-4. Image is pushed to DockerHub
-5. Ansible deploys the container on AWS EC2
+---
 
-## 🔹 Steps to Run Locally
-```bash
-docker build -t villa-agency .
-docker run --name villa -d -p 9001:80 villa-agency
+## ✨ Features
+
+- 📱 **Responsive design** (mobile & desktop friendly)
+- 🎨 Built with **Bootstrap 5**
+- 📄 **Multiple pages**: Home, Properties, Property Details, Contact
+- 🗺️ Integrated Google Maps on the contact page
+- 🚀 Easy to deploy with **Docker & Nginx**
+
+---
+
+## 📂 Project Structure
+
+villa-agency/
+├── assets/ # CSS, images, and other static assets
+├── vendor/ # Bootstrap and dependencies
+├── index.html # Homepage
+├── properties.html # Property listings overview
+├── property-details.html # Property detail page
+├── contact.html # Contact page with Google Maps
+├── Dockerfile # Docker build instructions
+└── docker-compose.yml # Optional: Docker Compose setup
+
+
+## 🖥️ Run Locally (Without Docker)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/GMPWijegunawardana/villa-agency.git
+   cd villa-agency
+
+   docker build -t villa-agency .
+   docker run --name villa -d -p 9001:80 villa-agency
+   
