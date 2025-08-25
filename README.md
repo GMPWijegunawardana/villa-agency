@@ -20,4 +20,4 @@ This project is a static real-estate website template (HTML, CSS, JS) that I **c
 ## 🔹 Steps to Run Locally
 ```bash
 docker build -t villa-agency .
-docker run -d -p 8080:80 villa-agency
+docker run --name villa -d -p 9001:80 villa-agency
